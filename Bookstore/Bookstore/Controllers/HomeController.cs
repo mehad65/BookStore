@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Bookstore.Models;
+using Bookstore.Repository;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,14 @@ namespace Bookstore.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+
+        public ViewResult Index()
         {
-            return "This is from my naem";
+            return View();
+        }
+        public ViewResult AboutUs()
+        {
+            return View();
         }
     }
 }
